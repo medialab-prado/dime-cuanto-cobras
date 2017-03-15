@@ -3,9 +3,9 @@
 
 ## Índice
 * [Entradilla](#entradilla)
-* [Introducción](#introduccion)
+* [Introducción](#introducción)
 * [Datos](#datos)
-  * [Precio del alquiler](#precio-del-alquier)
+  * [Precio del alquiler](#precio-del-alquiler)
   * [Salario medio](#salario-medio)
 * [Propuesta de producto final](#propuesta-de-producto-final)
   * [Mapa interactivo](#mapa-interactivo)
