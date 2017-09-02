@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Dime cuánto cobras y te diré dónde vivir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="img/iconos-logos/fav-icon.png" />
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/leaflet-sidebar.css"/>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@medialab">
+    <meta name="twitter:creator" content="@florafosset">
+    <meta name="twitter:title" content="Dime cuánto cobras y te diré dónde vivir">
+    <meta name="twitter:description" content="¿Aún es posible alquilar piso en Madrid y Barcelona sin arruinarse? Descúbrelo http://alquilarenelcentro.lol/">
+    <meta name="twitter:image" content="https://ffosset.github.io/dime-cuanto-cobras/img/pared-se-alquila.jpg">
+
+    <meta property="og:title" content="Dime cuánto cobras y te diré dónde vivir" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://alquilarenelcentro.lol/" />
+    <meta property="og:image" content="https://ffosset.github.io/dime-cuanto-cobras/img/pared-se-alquila.jpg" />
+    <meta property="og:description" content="¿Aún es posible alquilar piso en Madrid y Barcelona sin arruinarse? Descúbrelo http://alquilarenelcentro.lol/">
+
+
+  </head>
+
+  <body>
+      <div class="interactive-map-section">
+        <div class="selection-map">
+          <div class="text-selection-map">
+            <label for="cities-selection" class="title-map-selector">Elige la ciudad</label>
+            <div class="cities-selection">
+              <button class="btn-city btn-madrid" type="button" name="button">Madrid</button>
+              <button class="btn-city btn-barcelona btn-focus" type="button" name="button">Barcelona</button>
+            </div>
+
+            <label class="title-home-selector label-form" for="radio-group">¿Quieres vivir solo o compartir?</label>
+
+            <div>
+              <div style="float:left; width:20%;">
+                <input data-number id="solo" type="radio" name="radio-group"><label for="solo" class="home-selector">Solo</label>
+              </div>
+              <div style="float:right; width:60%;">
+                <input data-number id="share" type="radio" name="radio-group"><label for="share" class="home-selector">Compartir</label>
+              </div>
+            </div>
+
+
+            <label class="label-form" for="range-money"><span id="question">¿Cuánto cobras al mes?</span> <br> <span id="map-salary-value"></span></label>
+
+            <input class="range-one" name="range-money" type="range" value="1200" min="600" max="5000" step="100" id='map-salary'>
+
+            <label class="label-form" for="range-meters">¿Qué tamaño de apartamento quieres? <br> <span id="map-apartment-size-value"></span></label>
+            <input class="range-one" type="range" name="range-meters" value="45" min="30" max="200" step="5" id="map-apartment-size">
+
+            <label class="label-form" for="range-time">Observa la evolución de precios por año <br> <span id="map-year-value"></span></label>
+            <input class="range-one" type="range" name="range-time" min="2010" max="2017" step="1" value="2017" id="map-year">
+
+          </div>
+          <p class="text-percentage">Porcentaje de sueldo dedicado al alquiler:</p>
+          <div class="rental-percentage">
+            <div class="unit-percentage unit-30">- 30%</div>
+            <div class="unit-percentage unit-31">31-35%</div>
+            <div class="unit-percentage unit-36">36-40%</div>
+            <div class="unit-percentage unit-41">41-45%</div>
+            <div class="unit-percentage unit-46">46-50%</div>
+            <div class="unit-percentage unit-50">+ 50%</div>
+          </div>
+        </div>
+        <div id="map">
+        </div>
+        <p class="city-quote">Fuente de datos: <a href="https://www.idealista.com/informes-precio-vivienda" target="_blank">Idealista</a>
+        </p>
+      </div>
+    <script src="scripts/leaflet.js"></script>
+    <script src="scripts/leaflet.ajax.min.js"></script>
+    <script src="scripts/leaflet-sidebar.js"></script>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/d3.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/expensesCalculation.js" charset="utf-8"></script>
+    <script src="scripts/scroll-header.js" charset="utf-8"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101255297-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

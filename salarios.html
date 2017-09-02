@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Dime cuánto cobras y te diré dónde vivir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/png" href="img/iconos-logos/fav-icon.png" />
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/leaflet-sidebar.css"/>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@medialab">
+    <meta name="twitter:creator" content="@florafosset">
+    <meta name="twitter:title" content="Dime cuánto cobras y te diré dónde vivir">
+    <meta name="twitter:description" content="¿Aún es posible alquilar piso en Madrid y Barcelona sin arruinarse? Descúbrelo http://alquilarenelcentro.lol/">
+    <meta name="twitter:image" content="https://ffosset.github.io/dime-cuanto-cobras/img/pared-se-alquila.jpg">
+
+    <meta property="og:title" content="Dime cuánto cobras y te diré dónde vivir" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://alquilarenelcentro.lol/" />
+    <meta property="og:image" content="https://ffosset.github.io/dime-cuanto-cobras/img/pared-se-alquila.jpg" />
+    <meta property="og:description" content="¿Aún es posible alquilar piso en Madrid y Barcelona sin arruinarse? Descúbrelo http://alquilarenelcentro.lol/">
+
+
+  </head>
+
+  <body>
+
+      <div class="section-text-space section-three">
+        <div class="section-text">
+
+          <div class="interactive-wrap">
+            <div class="range-selector">
+              <div class="salary">
+                <label for="salary-range" class="label-salary-rental">Tu salario mensual neto: <br> <span id="value-salary-range"></span></label>
+                <input id="salary-range" type="range" name="salary-range" min="600" max="3000" step="100" value="1200" class="range-two">
+                <div class="range-slider">
+                  <span class="range-slider__value">600</span>
+                  <span class="range-slider__value">3000</span>
+                </div>
+              </div>
+
+              <div class="rental">
+                <label for="rental-range" class="label-salary-rental">Lo que gastas en alquiler: <br> <span id="value-rental-range"></span></label>
+                <input id="rental-range" type="range" name="rental-range" min="200" max="1500" step="20" value="400" class="range-two">
+                <div class="range-slider">
+                  <span class="range-slider__value">200</span>
+                  <span class="range-slider__value">1500</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="expenses-table">
+              <div class="square">
+                <div class="frontSide">
+                  <div class="square-img">
+                    <img src="img/iconos-logos/gastoSalario/alimentacion.svg" alt="alimentación">
+                  </div>
+                  <p class="euros" id="alimentacionMoneyValue">€</p>
+                </div>
+                <div class="backSide">
+                  <p>Alimentación</p>
+                  <p class="percent" id="alimentacionPercentValue">%</p>
+                </div>
+              </div>
+
+              <div class="square">
+                <div class="frontSide">
+                  <div class="square-img">
+                    <img src="img/iconos-logos/gastoSalario/ropa-calzado.svg" alt="">
+                  </div>
+                  <p class="euros" id="ropaMoneyValue">€</p>
+                </div>
+                <div class="backSide">
+                  <p>Ropa y calzado</p>
+                  <p class="percent" id="ropaPercentValue">%</p>
+                </div>
+              </div>
+
+              <div class="square">
+                <div class="frontSide">
+                  <div class="square-img">
+                    <img src="img/iconos-logos/gastoSalario/transporte.svg" alt="icono de transportes">
+                  </div>
+                  <p class="euros" id="transporteMoneyValue">€</p>
+                </div>
+                <div class="backSide">
+                  <p>Transporte</p>
+                  <p class="percent" id="transportePercentValue">%</p>
+                </div>
+              </div>
+
+              <div class="square">
+                <div class="frontSide">
+                  <div class="square-img">
+                    <img src="img/iconos-logos/gastoSalario/salud.svg" alt="">
+                  </div>
+                  <p class="euros" id="saludMoneyValue">€</p>
+                </div>
+                <div class="backSide">
+                  <p>Salud</p>
+                  <p class="percent" id="saludPercentValue">%</p>
+                </div>
+              </div>
+
+              <div class="square">
+                <div class="frontSide">
+                  <div class="square-img">
+                    <img src="img/iconos-logos/gastoSalario/gastos-hogar.svg" alt="">
+                  </div>
+
+                  <p class="euros" id="hogarMoneyValue">€</p>
+                </div>
+
+                <div class="backSide">
+                  <p>Gastos hogar</p>
+                  <p class="percent" id="hogarPercentValue">%</p>
+                </div>
+              </div>
+
+              <div class="square">
+                <div class="frontSide">
+                  <div class="square-img">
+                    <img src="img/iconos-logos/gastoSalario/ensenanza.svg" alt="">
+                  </div>
+                  <p class="euros" id="ensenanzaMoneyValue">€</p>
+                </div>
+
+                <div class="backSide">
+                  <p>Enseñanza</p>
+                  <p class="percent" id="ensenanzaPercentValue">%</p>
+                </div>
+              </div>
+
+              <div class="square">
+                <div class="frontSide">
+                  <div class="square-img">
+                    <img src="img/iconos-logos/gastoSalario/telecomunicacion.svg" alt="">
+                  </div>
+
+                  <p class="euros" id="telecomunicacionMoneyValue">€</p>
+                </div>
+
+                <div class="backSide">
+                  <p>Telecomunicaciones</p>
+                  <p class="percent" id="telecomunicacionPercentValue">%</p>
+                </div>
+              </div>
+
+              <div class="square" >
+                <div class="frontSide">
+                  <div class="square-img">
+                    <img src="img/iconos-logos/gastoSalario/ahorros.svg" alt="">
+                  </div>
+
+                  <p class="euros" id="ahorrosMoneyValue">€</p>
+                </div>
+
+                <div class="backSide">
+                  <p>Ahorros</p>
+                  <p class="percent" id="ahorrosPercentValue">%</p>
+                </div>
+              </div>
+
+              <div class="square">
+                <div class="frontSide">
+                  <div class="square-img">
+                    <img src="img/iconos-logos/gastoSalario/bares-restaurantes.svg" alt="">
+                  </div>
+
+                  <p class="euros" id="baresMoneyValue">€</p>
+                </div>
+                <div class="backSide">
+                  <p>Bares y restaurantes</p>
+                  <p class="percent" id="baresPercentValue">%</p>
+                </div>
+              </div>
+
+              <div class="square">
+                <div class="frontSide">
+                  <div class="square-img">
+                    <img src="img/iconos-logos/gastoSalario/ocio-cultura.svg" alt="">
+                  </div>
+                  <p class="euros" id="culturaMoneyValue">€</p>
+                </div>
+                <div class="backSide">
+                  <p>Ocio y cultura</p>
+                  <p class="percent" id="culturaPercentValue">%</p>
+                </div>
+              </div>
+
+              <div class="square">
+                <div class="frontSide">
+                  <div class="square-img">
+                    <img src="img/iconos-logos/gastoSalario/alcohol-tabaco.svg" alt="">
+                  </div>
+                  <p class="euros" id="tabacoMoneyValue">€</p>
+                </div>
+                <div class="backSide">
+                  <p>Alcohol y tabaco</p>
+                  <p class="percent" id="tabacoPercentValue">%</p>
+                </div>
+              </div>
+
+              <div class="square">
+                <div class="frontSide">
+                  <div class="square-img">
+                    <img src="img/iconos-logos/gastoSalario/otros.svg" alt="">
+                  </div>
+                  <p class="euros" id="otrosMoneyValue">€</p>
+                </div>
+                <div class="backSide">
+                  <p>Otros</p>
+                  <p class="percent" id="otrosPercentValue">%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <p class="city-quote">La clasificación de gastos utilizada es de la <a href="http://eu.eustat.eus/documentos/datos/codigos/egv_Clas_bienes_serv_coicop_e.pdf" target="_blank">COIOP (Eustat)</a>, a la cual hemos añadido un porcentaje de ahorros deducido a partir de la media nacional. Los porcentajes dedicados a cada gasto provienen de la <a href="http://www.ine.es/infografias/gastosepf/desktop/gastos.html?t=1&lang=es" target="_blank">encuesta de presupuestos familiares </a> realizada por el INE.
+            </p>
+
+    <script src="scripts/leaflet.js"></script>
+    <script src="scripts/leaflet.ajax.min.js"></script>
+    <script src="scripts/leaflet-sidebar.js"></script>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/d3.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/expensesCalculation.js" charset="utf-8"></script>
+    <script src="scripts/scroll-header.js" charset="utf-8"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-101255297-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+.info-squares{
+  display: flex;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.square-item{
+  width: 50%;
+  min-width: 320px;
+  padding: 20px;
+}
+
+.one-square{
+  background-color: #fef2d7;
+}
+
+.two-square{
+  background-color: #fde7be;
+}
+
+.tableauPlaceholder {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .info-squares {
+    display: inline;
+  }
+
+  .square-item{
+    width: 100%;
+  }
+
+}

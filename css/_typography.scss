@@ -1,0 +1,123 @@
+body{
+  font-family: $principal-typography;
+  line-height: 1.5;
+}
+
+.text-hero{
+  font-family: $secondary-typography;
+  color: $color-light;
+  text-shadow: 0 0 40px #000000;
+}
+
+.title-hero{
+  font-size: 60px;
+}
+
+.small-hero{
+  font-size: 22px;
+}
+
+@media only screen and (max-width: 570px) {
+    .title-hero{
+  font-size: 14vw;
+  line-height: 1.2em;
+}
+
+.small-hero{
+  font-size: 4vw;
+}
+
+}
+
+.nav-item{
+  font-family: $secondary-typography;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  transition: color 0.1s;
+  text-decoration: none;
+}
+
+.nav-item:hover{
+  color: #f89a14;
+}
+
+.title-chapter{
+  font-family: $secondary-typography;
+  font-size: 40px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 99;
+}
+
+.body-text{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.title-cite{
+  font-family: $secondary-typography;
+  font-size: 30px;
+  padding: 0 20px;
+  position: relative;
+  z-index: 99;
+  margin: 0;
+}
+
+.subtitle-section{
+  font-size: 30px;
+  font-family: $subtitle-typography;
+}
+
+.subtitle-section-city-europe{
+  font-size: 20px;
+  font-family: $subtitle-typography;
+}
+
+.subtitle-section-city{
+  font-size: 28px;
+  font-weight: normal;
+  font-family: $subtitle-typography;
+  margin-bottom: 15px;
+}
+
+.city-quote {
+  font-size: 10.5px;
+  text-align: center;
+}
+
+.title-map-selector{
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.text-comic{
+  font-family: $secondary-typography;
+  font-size: 30px;
+}
+
+.share-media{
+  color: $color-footer;
+  text-align: center;
+}
+
+.text-share-one{
+ font-size: 30px;
+}
+
+.text-share-two{
+  font-size: 25px;
+}
+
+.appreciation{
+  color: $color-light;
+}
+
+.text-medialab-footer{
+  text-align: right;
+}
+
+.bold{
+  font-weight: 700;
+}

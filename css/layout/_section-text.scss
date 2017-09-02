@@ -1,0 +1,17 @@
+.section-text-space{
+  width: 100%;
+  padding: 50px 0;
+}
+
+.section-text{
+  max-width: 900px;
+  padding: 0 5em;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+    /* For phones: */
+ .section-text{
+  padding: 0 2em;
+}
+}

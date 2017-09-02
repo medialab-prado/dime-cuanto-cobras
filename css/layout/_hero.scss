@@ -1,0 +1,53 @@
+.hero{
+  width: 100%;
+  height: 85vh;
+  background-image: url("../img/img-hero.jpg");
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-hero{
+  width: 48%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+@media only screen and (max-width: 930px) {
+    .hero {
+      background-size: 150%;
+      background:
+  /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    /* bottom, image */
+    url("../img/img-hero.jpg");
+      background-size: 150%;
+      height: 100%;
+      }
+      .text-hero{
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      }
+
+}
+
+@media only screen and (max-width: 570px) {
+    .hero {
+      background:
+  /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.98)
+    ),
+    /* bottom, image */
+    url("../img/img-hero.jpg");
+      background-size: 150%;
+      height: 100%;
+      }
+
+}

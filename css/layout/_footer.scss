@@ -1,0 +1,122 @@
+.footer{
+  width: 100%;
+}
+
+.share-media{
+  margin: 50px 0;
+}
+
+.icons-media{
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+    .icons-media{
+  margin: 0 2rem;
+}
+
+}
+
+.icons-media a{
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  border-radius: 50%;
+  border: 2px solid $color-footer;
+  transition: border-color 0.5s;
+}
+
+.icons-media a:hover{
+  border-color: $color-section-orange;
+}
+
+.color-icon{
+  fill: $color-footer;
+  transition: fill 0.5s;
+}
+
+.icons-media a:hover .color-icon{
+  fill: $color-section-orange;
+}
+
+.section-appreciation{
+  background-color: $color-footer;
+}
+
+.appreciation{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team{
+  width: 40%;
+}
+
+.role{
+line-height: 0;
+padding-bottom: 20px
+}
+
+.team-link{
+  color: white;
+  transition: color 0.5s, text-decoration 0.5s;
+}
+
+.team-link:hover{
+  color: $color-section-orange;
+  text-decoration: underline;
+}
+
+.greetings{
+  width: 60%;
+}
+
+@media only screen and (max-width: 700px) {
+    .team{
+      width: 100%;
+    }
+    .greetings{
+      width: 100%;
+    }
+    .role{
+      padding-bottom: 0px;
+      display: inline-block;
+    }
+    .member{
+      line-height: 0;
+      display: inline-block;
+      margin-right: 5px;
+
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .section-text{
+      font-size: 14px;
+    }
+}
+
+.project-logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.text-medialab-footer{
+  width: 150px;
+  margin-right: 30px;
+  margin-top: 0;
+}
+
+.logo-medialab-footer{
+  width: 280px;
+}
+
+.logo-medialab-footer img{
+  width: 100%;
+}

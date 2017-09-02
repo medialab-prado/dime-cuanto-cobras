@@ -1,0 +1,51 @@
+.format-cite{
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.rectangle-cite{
+  height: 74%;
+  width: 100%;
+  position: absolute;
+}
+
+.orange{
+  background-color: #f89e13;
+}
+
+.low-orange{
+  background-color: #f2bc66;
+}
+
+.author-cite{
+  margin: 0;
+  position: absolute;
+  bottom: -8px;
+  right: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+    /* For tablets: */
+ .rectangle-cite{
+  height: 100%;
+  width: 100%;
+}
+.title-cite{
+  padding: 1em;
+}
+}
+
+@media only screen and (max-width: 500px) {
+    /* For tablets: */
+ .rectangle-cite{
+  height: 100%;
+  width: 100%;
+}
+.title-cite{
+  padding: 1em;
+}
+}

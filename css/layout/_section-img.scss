@@ -1,0 +1,45 @@
+.section-img{
+  width: 100%;
+  position: relative;
+}
+
+.section-img img{
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.author-image{
+  position: absolute;
+  bottom: -25px;
+  right: 10%;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: black;
+}
+
+.author-image-white{
+  position: absolute;
+  bottom: -45px;
+  right: 10%;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.author-image:hover{
+  text-decoration: underline;
+}
+
+.white-author{
+  color: white;
+  margin: 0 0 2px;
+  text-align: right;
+}
+
+a.white-author:hover{
+  text-decoration: underline;
+}
