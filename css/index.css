@@ -529,6 +529,9 @@ input.range-one::-webkit-slider-thumb {
 a.white-author:hover {
   text-decoration: underline; }
 
+.body-image {
+  width: 100%; }
+
 .comic-img-text {
   display: flex;
   align-items: center; }

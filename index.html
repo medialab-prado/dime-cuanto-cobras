@@ -176,202 +176,22 @@
             Con su salario, compartir piso es la única opción que tiene Joana Rosa, de 34 años, una fotógrafa autónoma que trabaja en el Museo Nacional de Arte de Cataluña y que vive en el barrio barcelonés de Gràcia. Le gustaría vivir sola, pero no encuentra nada a un precio aceptable, pues los 450 euros que gasta son un poco menos de la mitad de lo que gana mensualmente. Lo mismo le ocurre a Isabel Cano, diseñadora gráfica de 26 años residente en Madrid. Tiene un contrato en prácticas de media jornada y un salario de 500 euros mensuales. “Acceder a un alquiler en Madrid es muy difícil a no ser que optes por compartir con varias personas en viviendas en malas condiciones. Es complicado finalizar los estudios y arrancar con la vida profesional si los salarios están como están”.
           </p>
           <p class="body-text">
-            <strong>¡Haz la prueba! Mete tu sueldo, el precio que pagas por tu piso y observa cuánto te queda para los gastos cotidianos.</strong>
+            El nivel de formación de una persona puede ser una pista para saber dónde estará su casa.  Si Madrid y Barcelona se dividen en tres grandes áreas (precios altos, bajos y medios), las más caras presentan porcentajes de población más formada. Así, el conjunto de los distritos de toda la zona centro de la capital catalana (Les Corts, Sarrià-Sant Gervasi, Gràcia, Eixample, Ciutat Vella y Sant Martí) cuenta con un 36% de residentes con titulación universitaria, cifra que nada tienen que ver con la realidad de la zona norte (Nou Barris, Sant Andreu y Horta Guinardó), más económica y donde solo hay un 19% de titulados universitarios.
           </p>
-
-          <div class="interactive-wrap">
-            <div class="range-selector">
-              <div class="salary">
-                <label for="salary-range" class="label-salary-rental">Tu salario mensual neto: <br> <span id="value-salary-range"></span></label>
-                <input id="salary-range" type="range" name="salary-range" min="600" max="3000" step="100" value="1200" class="range-two">
-                <div class="range-slider">
-                  <span class="range-slider__value">600</span>
-                  <span class="range-slider__value">3000</span>
-                </div>
-              </div>
-
-              <div class="rental">
-                <label for="rental-range" class="label-salary-rental">Lo que gastas en alquiler: <br> <span id="value-rental-range"></span></label>
-                <input id="rental-range" type="range" name="rental-range" min="200" max="1500" step="20" value="400" class="range-two">
-                <div class="range-slider">
-                  <span class="range-slider__value">200</span>
-                  <span class="range-slider__value">1500</span>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="expenses-table">
-              <div class="square">
-                <div class="frontSide">
-                  <div class="square-img">
-                    <img src="img/iconos-logos/gastoSalario/alimentacion.svg" alt="alimentación">
-                  </div>
-                  <p class="euros" id="alimentacionMoneyValue">€</p>
-                </div>
-                <div class="backSide">
-                  <p>Alimentación</p>
-                  <p class="percent" id="alimentacionPercentValue">%</p>
-                </div>
-              </div>
-
-              <div class="square">
-                <div class="frontSide">
-                  <div class="square-img">
-                    <img src="img/iconos-logos/gastoSalario/ropa-calzado.svg" alt="">
-                  </div>
-                  <p class="euros" id="ropaMoneyValue">€</p>
-                </div>
-                <div class="backSide">
-                  <p>Ropa y calzado</p>
-                  <p class="percent" id="ropaPercentValue">%</p>
-                </div>
-              </div>
-
-              <div class="square">
-                <div class="frontSide">
-                  <div class="square-img">
-                    <img src="img/iconos-logos/gastoSalario/transporte.svg" alt="icono de transportes">
-                  </div>
-                  <p class="euros" id="transporteMoneyValue">€</p>
-                </div>
-                <div class="backSide">
-                  <p>Transporte</p>
-                  <p class="percent" id="transportePercentValue">%</p>
-                </div>
-              </div>
-
-              <div class="square">
-                <div class="frontSide">
-                  <div class="square-img">
-                    <img src="img/iconos-logos/gastoSalario/salud.svg" alt="">
-                  </div>
-                  <p class="euros" id="saludMoneyValue">€</p>
-                </div>
-                <div class="backSide">
-                  <p>Salud</p>
-                  <p class="percent" id="saludPercentValue">%</p>
-                </div>
-              </div>
-
-              <div class="square">
-                <div class="frontSide">
-                  <div class="square-img">
-                    <img src="img/iconos-logos/gastoSalario/gastos-hogar.svg" alt="">
-                  </div>
-
-                  <p class="euros" id="hogarMoneyValue">€</p>
-                </div>
-
-                <div class="backSide">
-                  <p>Gastos hogar</p>
-                  <p class="percent" id="hogarPercentValue">%</p>
-                </div>
-              </div>
-
-              <div class="square">
-                <div class="frontSide">
-                  <div class="square-img">
-                    <img src="img/iconos-logos/gastoSalario/ensenanza.svg" alt="">
-                  </div>
-                  <p class="euros" id="ensenanzaMoneyValue">€</p>
-                </div>
-
-                <div class="backSide">
-                  <p>Enseñanza</p>
-                  <p class="percent" id="ensenanzaPercentValue">%</p>
-                </div>
-              </div>
-
-              <div class="square">
-                <div class="frontSide">
-                  <div class="square-img">
-                    <img src="img/iconos-logos/gastoSalario/telecomunicacion.svg" alt="">
-                  </div>
-
-                  <p class="euros" id="telecomunicacionMoneyValue">€</p>
-                </div>
-
-                <div class="backSide">
-                  <p>Telecomunicaciones</p>
-                  <p class="percent" id="telecomunicacionPercentValue">%</p>
-                </div>
-              </div>
-
-              <div class="square" >
-                <div class="frontSide">
-                  <div class="square-img">
-                    <img src="img/iconos-logos/gastoSalario/ahorros.svg" alt="">
-                  </div>
-
-                  <p class="euros" id="ahorrosMoneyValue">€</p>
-                </div>
-
-                <div class="backSide">
-                  <p>Ahorros</p>
-                  <p class="percent" id="ahorrosPercentValue">%</p>
-                </div>
-              </div>
-
-              <div class="square">
-                <div class="frontSide">
-                  <div class="square-img">
-                    <img src="img/iconos-logos/gastoSalario/bares-restaurantes.svg" alt="">
-                  </div>
-
-                  <p class="euros" id="baresMoneyValue">€</p>
-                </div>
-                <div class="backSide">
-                  <p>Bares y restaurantes</p>
-                  <p class="percent" id="baresPercentValue">%</p>
-                </div>
-              </div>
-
-              <div class="square">
-                <div class="frontSide">
-                  <div class="square-img">
-                    <img src="img/iconos-logos/gastoSalario/ocio-cultura.svg" alt="">
-                  </div>
-                  <p class="euros" id="culturaMoneyValue">€</p>
-                </div>
-                <div class="backSide">
-                  <p>Ocio y cultura</p>
-                  <p class="percent" id="culturaPercentValue">%</p>
-                </div>
-              </div>
-
-              <div class="square">
-                <div class="frontSide">
-                  <div class="square-img">
-                    <img src="img/iconos-logos/gastoSalario/alcohol-tabaco.svg" alt="">
-                  </div>
-                  <p class="euros" id="tabacoMoneyValue">€</p>
-                </div>
-                <div class="backSide">
-                  <p>Alcohol y tabaco</p>
-                  <p class="percent" id="tabacoPercentValue">%</p>
-                </div>
-              </div>
-
-              <div class="square">
-                <div class="frontSide">
-                  <div class="square-img">
-                    <img src="img/iconos-logos/gastoSalario/otros.svg" alt="">
-                  </div>
-                  <p class="euros" id="otrosMoneyValue">€</p>
-                </div>
-                <div class="backSide">
-                  <p>Otros</p>
-                  <p class="percent" id="otrosPercentValue">%</p>
-                </div>
-              </div>
-            </div>
+          <div class="body-text">
+              <img class="body-image" src="img/estudios-bcn.png" alt="">
+              <p class="city-quote">La variable "Título Superior" engloba Diplomado universitario, Arquitecto o Ingeniero técnico, Licenciado universitario, Titulado en estudios superiores no universitario y Doctorado o Estudios de postgrado. Fuente: <a href="http://www.bcn.cat/estadistica/castella/" target="_blank">Ajuntament de Barcelona</a>
+              </p>
           </div>
-            <p class="city-quote">La clasificación de gastos utilizada es de la <a href="http://eu.eustat.eus/documentos/datos/codigos/egv_Clas_bienes_serv_coicop_e.pdf" target="_blank">COIOP (Eustat)</a>, a la cual hemos añadido un porcentaje de ahorros deducido a partir de la media nacional. Los porcentajes dedicados a cada gasto provienen de la <a href="http://www.ine.es/infografias/gastosepf/desktop/gastos.html?t=1&lang=es" target="_blank">encuesta de presupuestos familiares </a> realizada por el INE.
-            </p>
-            <p class="body-text">
-              En condiciones ideales, un asalariado no debería destinar más de un 30% de su nómina mensual al pago del alquiler, una recomendación difícil de cumplir si se vive en ciudades como Madrid y Barcelona y, sobre todo, si uno es joven.
-            </p>
+          <p class="body-text">
+            Madrid sigue un patrón parecido. La zona central, más cara, tiene un 50% de perfiles universitarios. El sur, su opuesto, solo un 19%. Si se amplía el foco, aparecen datos interesantes. Los ocho distritos centrales (de un total de 21) reúnen por sí solos a la mitad de los vecinos con estudios superiores de toda la ciudad. Los nueve con precios más bajos, casi dos tercios del total de madrileños sin estudios, que no han acabado la Educación Primaria Básica o que son analfabetos.
+          </p>
+          <div class="body-text">
+              <img class="body-image" src="img/estudios-madrid.png" alt="">
+              <p class="city-quote">Fuente: <a href="http://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Estadistica?vgnextfmt=default&vgnextchannel=8156e39873674210VgnVCM1000000b205a0aRCRD&vgnextoid=8156e39873674210VgnVCM1000000b205a0aRCRD" target="_blank">Ayuntamiento de Madrid</a>. Datos de enero de 2017
+              </p>
+          </div>
+
             <p class="body-text">
               La imposibilidad de pagar un alquiler en ciertas zonas expulsa hacia la periferia a personas con menor poder adquisitivo. Esta circunstancia empieza a conocerse como proceso de gentrificación, aunque el geógrafo especializado en estudios urbanos Oriol Nel·lo propone el término <em>aburguesamiento</em> o <em>elitización</em> como posibles traducciones, pues quienes llenan los huecos son personas más aco­mo­dadas que las que se marchan. En su artículo <a href="http://www.geocritiq.com/2016/12/quien-teme-a-la-gentrificacion/" target="_blank">¿Quién teme a la gentrificación? </a> menciona los pre­cios como un fil­tro que con­di­ciona el lugar donde pueden vivir las familias. “El fenó­meno tiende a hacerse gene­ral: empre­sas, fon­dos de inver­sión y par­ti­cu­la­res pare­cen haberse hecho cons­cien­tes de las ganan­cias poten­cia­les que pue­den deri­varse de los incre­men­tos de la renta urbana deri­va­da de este fenómeno”.
             </p>
@@ -386,6 +206,202 @@
             <p class="body-text">
               Paloma, la propietaria que necesita que sus inquilinos encuentren una nueva casa, lo sabe: “Todo esto repercute en el abandono de la ciudad. Uno deja su piso de alquiler en un barrio concreto y por el mismo dinero que pagaba ya no puede vivir en él. O bajas los estándares, es decir, menos luz y peores condiciones del piso, o te vas fuera de la zona”.
             </p>
+
+            <p class="body-text">
+              <strong>¡Haz la prueba! Mete tu sueldo, el precio que pagas por tu piso y observa cuánto te queda para los gastos cotidianos.</strong>
+            </p>
+
+            <div class="interactive-wrap">
+              <div class="range-selector">
+                <div class="salary">
+                  <label for="salary-range" class="label-salary-rental">Tu salario mensual neto: <br> <span id="value-salary-range"></span></label>
+                  <input id="salary-range" type="range" name="salary-range" min="600" max="3000" step="100" value="1200" class="range-two">
+                  <div class="range-slider">
+                    <span class="range-slider__value">600</span>
+                    <span class="range-slider__value">3000</span>
+                  </div>
+                </div>
+
+                <div class="rental">
+                  <label for="rental-range" class="label-salary-rental">Lo que gastas en alquiler: <br> <span id="value-rental-range"></span></label>
+                  <input id="rental-range" type="range" name="rental-range" min="200" max="1500" step="20" value="400" class="range-two">
+                  <div class="range-slider">
+                    <span class="range-slider__value">200</span>
+                    <span class="range-slider__value">1500</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="expenses-table">
+                <div class="square">
+                  <div class="frontSide">
+                    <div class="square-img">
+                      <img src="img/iconos-logos/gastoSalario/alimentacion.svg" alt="alimentación">
+                    </div>
+                    <p class="euros" id="alimentacionMoneyValue">€</p>
+                  </div>
+                  <div class="backSide">
+                    <p>Alimentación</p>
+                    <p class="percent" id="alimentacionPercentValue">%</p>
+                  </div>
+                </div>
+
+                <div class="square">
+                  <div class="frontSide">
+                    <div class="square-img">
+                      <img src="img/iconos-logos/gastoSalario/ropa-calzado.svg" alt="">
+                    </div>
+                    <p class="euros" id="ropaMoneyValue">€</p>
+                  </div>
+                  <div class="backSide">
+                    <p>Ropa y calzado</p>
+                    <p class="percent" id="ropaPercentValue">%</p>
+                  </div>
+                </div>
+
+                <div class="square">
+                  <div class="frontSide">
+                    <div class="square-img">
+                      <img src="img/iconos-logos/gastoSalario/transporte.svg" alt="icono de transportes">
+                    </div>
+                    <p class="euros" id="transporteMoneyValue">€</p>
+                  </div>
+                  <div class="backSide">
+                    <p>Transporte</p>
+                    <p class="percent" id="transportePercentValue">%</p>
+                  </div>
+                </div>
+
+                <div class="square">
+                  <div class="frontSide">
+                    <div class="square-img">
+                      <img src="img/iconos-logos/gastoSalario/salud.svg" alt="">
+                    </div>
+                    <p class="euros" id="saludMoneyValue">€</p>
+                  </div>
+                  <div class="backSide">
+                    <p>Salud</p>
+                    <p class="percent" id="saludPercentValue">%</p>
+                  </div>
+                </div>
+
+                <div class="square">
+                  <div class="frontSide">
+                    <div class="square-img">
+                      <img src="img/iconos-logos/gastoSalario/gastos-hogar.svg" alt="">
+                    </div>
+
+                    <p class="euros" id="hogarMoneyValue">€</p>
+                  </div>
+
+                  <div class="backSide">
+                    <p>Gastos hogar</p>
+                    <p class="percent" id="hogarPercentValue">%</p>
+                  </div>
+                </div>
+
+                <div class="square">
+                  <div class="frontSide">
+                    <div class="square-img">
+                      <img src="img/iconos-logos/gastoSalario/ensenanza.svg" alt="">
+                    </div>
+                    <p class="euros" id="ensenanzaMoneyValue">€</p>
+                  </div>
+
+                  <div class="backSide">
+                    <p>Enseñanza</p>
+                    <p class="percent" id="ensenanzaPercentValue">%</p>
+                  </div>
+                </div>
+
+                <div class="square">
+                  <div class="frontSide">
+                    <div class="square-img">
+                      <img src="img/iconos-logos/gastoSalario/telecomunicacion.svg" alt="">
+                    </div>
+
+                    <p class="euros" id="telecomunicacionMoneyValue">€</p>
+                  </div>
+
+                  <div class="backSide">
+                    <p>Telecomunicaciones</p>
+                    <p class="percent" id="telecomunicacionPercentValue">%</p>
+                  </div>
+                </div>
+
+                <div class="square" >
+                  <div class="frontSide">
+                    <div class="square-img">
+                      <img src="img/iconos-logos/gastoSalario/ahorros.svg" alt="">
+                    </div>
+
+                    <p class="euros" id="ahorrosMoneyValue">€</p>
+                  </div>
+
+                  <div class="backSide">
+                    <p>Ahorros</p>
+                    <p class="percent" id="ahorrosPercentValue">%</p>
+                  </div>
+                </div>
+
+                <div class="square">
+                  <div class="frontSide">
+                    <div class="square-img">
+                      <img src="img/iconos-logos/gastoSalario/bares-restaurantes.svg" alt="">
+                    </div>
+
+                    <p class="euros" id="baresMoneyValue">€</p>
+                  </div>
+                  <div class="backSide">
+                    <p>Bares y restaurantes</p>
+                    <p class="percent" id="baresPercentValue">%</p>
+                  </div>
+                </div>
+
+                <div class="square">
+                  <div class="frontSide">
+                    <div class="square-img">
+                      <img src="img/iconos-logos/gastoSalario/ocio-cultura.svg" alt="">
+                    </div>
+                    <p class="euros" id="culturaMoneyValue">€</p>
+                  </div>
+                  <div class="backSide">
+                    <p>Ocio y cultura</p>
+                    <p class="percent" id="culturaPercentValue">%</p>
+                  </div>
+                </div>
+
+                <div class="square">
+                  <div class="frontSide">
+                    <div class="square-img">
+                      <img src="img/iconos-logos/gastoSalario/alcohol-tabaco.svg" alt="">
+                    </div>
+                    <p class="euros" id="tabacoMoneyValue">€</p>
+                  </div>
+                  <div class="backSide">
+                    <p>Alcohol y tabaco</p>
+                    <p class="percent" id="tabacoPercentValue">%</p>
+                  </div>
+                </div>
+
+                <div class="square">
+                  <div class="frontSide">
+                    <div class="square-img">
+                      <img src="img/iconos-logos/gastoSalario/otros.svg" alt="">
+                    </div>
+                    <p class="euros" id="otrosMoneyValue">€</p>
+                  </div>
+                  <div class="backSide">
+                    <p>Otros</p>
+                    <p class="percent" id="otrosPercentValue">%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <p class="city-quote">La clasificación de gastos utilizada es de la <a href="http://eu.eustat.eus/documentos/datos/codigos/egv_Clas_bienes_serv_coicop_e.pdf" target="_blank">COIOP (Eustat)</a>, a la cual hemos añadido un porcentaje de ahorros deducido a partir de la media nacional. Los porcentajes dedicados a cada gasto provienen de la <a href="http://www.ine.es/infografias/gastosepf/desktop/gastos.html?t=1&lang=es" target="_blank">encuesta de presupuestos familiares </a> realizada por el INE.
+              </p>
+
         </div>
 
       </div>
@@ -408,10 +424,6 @@
           <p class="body-text">
             Este cambio en las preferencias ha hecho que la oferta de alquiler no haya crecido a la par que la demanda y eso favorece la subida de los precios, que llevaban diez años hibernando. El concejal de Vivienda del Ayuntamiento de Barcelona, Josep Maria Montaner, apunta a más causas que explican que el parque de alquiler sea escaso: la demanda de pisos ha crecido por la necesidad interna de la ciudad, por la vivienda temporal turística y por todo un sector compuesto por estudiantes, investigadores o técnicos, gente que trabaja para multinacionales o laboratorios durante una época acotada y que tienen más recursos económicos para alquilar que la gente de los barrios.
           </p>
-          <div class="section-img">
-              <img src="img/img-comic.jpg" alt="">
-              <a href="https://www.forges.com/" target="_blank" class="author-image">&copy; Forges</a>
-          </div>
           <p class="body-text">
             Jaime Palomera, portavoz del Sindicat de Llogaters [inquilinos] de Barcelona, señala cuatro responsables de la subida de precios: la banca, que mantiene miles de pisos vacíos a la espera de que suba su precio en el mercado; los fondos de inversión extranjeros, que han visto en la compra de edificios enteros para alquilar un negocio muy lucrativo; las agencias inmobiliarias, interesadas en fomentar los precios altos para aumentar su porcentaje de comisión y, por último, la propia legislación. En 2013 se aprobó la Ley de Arrendamientos Urbanos y debilitó mucho los derechos de los inquilinos, por ejemplo, con la reducción de los  contratos de 5 a 3 años.
           </p>
@@ -455,6 +467,14 @@
           <p class="body-text">
             El economista Joan Rafols considera que la necesidad de regular los apartamentos turísticos tiene más bien un fuerte componente fiscal y señala la necesidad de que Hacienda controle unos ingresos que dan mucha rentabilidad, “dos o tres veces más que si se dedica a la una renta permanente y que se le oculta al fisco”.
           </p>
+          <p class="body-text">
+            La  suma de los apartamentos turísticos, la gentrificación y los precios altos (y en aumento) dan una realidad: los centros de Barcelona y Madrid se vacían. En la década comprendida entre 2006 y 2016, el número de residentes empadronados ha caído en más de 18.000 personas en la Ciudad Condal, 17.000 en la capital española.
+          </p>
+          <div class="body-text">
+              <img class="body-image" src="img/padron.png" alt="">
+              <p class="city-quote">Fuente de datos: <a href="http://www.bcn.cat/estadistica/castella/" target="_blank">Ajuntament de Barcelona</a> y <a href="http://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Estadistica?vgnextfmt=default&vgnextchannel=8156e39873674210VgnVCM1000000b205a0aRCRD&vgnextoid=8156e39873674210VgnVCM1000000b205a0aRCRD" target="_blank">Ayuntamiento de Madrid</a>
+              </p>
+          </div>
         </div>
       </div>
 
